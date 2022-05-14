@@ -8,6 +8,7 @@ const deletePosts ={
   async deletePost({req,res}){
     const AllPost = await  Post.deleteMany({})
     successhandle(res, AllPost)
+    console.log(AllPost)
     
   },
   async deleteOneById({req,res}){
