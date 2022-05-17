@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "23441ee8-32bc-4e72-899b-216e8d0279ec",
+		"name": "mogoees-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增單筆資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"One love\",\n    \"content\":\"love story\",\n    \"type\":\"love\",\n    \"tags\":\"adventure\"\n   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://powerful-island-58035.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"powerful-island-58035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有資料",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"product\": \"綠茶多多\",\n     \"price\": 20,\n     \"ice\":\"少冰\",\n     \"sugar\":\"少糖\"\n\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://powerful-island-58035.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"powerful-island-58035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n    \"content\":\"Fun story\"\n  \n   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://powerful-island-58035.herokuapp.com/post/627f86b7c89a63b75fbac7f3",
+					"protocol": "https",
+					"host": [
+						"powerful-island-58035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"627f86b7c89a63b75fbac7f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://powerful-island-58035.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"powerful-island-58035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://powerful-island-58035.herokuapp.com/post/627f86b7c89a63b75fbac7f3",
+					"protocol": "https",
+					"host": [
+						"powerful-island-58035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"627f86b7c89a63b75fbac7f3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
