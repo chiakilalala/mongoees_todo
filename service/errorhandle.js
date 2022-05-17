@@ -2,7 +2,7 @@
 const header = require('./header');
 const errorhandle =(res,err)=>{
     res.writeHead(400,header);
-    let message = 'id沒有';
+    let message = '';
     if(err){
        err.message
     }else{
